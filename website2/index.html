@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/4b6dbcce6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="navbar_container">
+        <a href="/" id="navbar-logo">billiepic</a>
+
+        <ul class="navbar_menu">
+          <li class="navbar_item"><a href="#home" class="navbar_links">Home</a></li>
+          <li class="navbar_item"><a href="#paragpraph" class="navbar_links">Paragpraph</a></li>
+          <li class="navbar_item"><a href="#video" class="navbar_links">Video</a></li>
+          <li class="navbar_item"><a href="#footer" class="navbar_links">Footer</a></li>
+        </ul>
+
+        <div class="navbar_btn desktop">
+          <a href="tap.html" class="button">Tap Me!</a>
+        </div>
+
+        <button class="navbar_toggle" id="mobile-menu" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero section-->
+  <main>
+    <section class="hero" id="home">
+      <div class="hero_container">
+        <div class="hero_content">
+          <h1>HAPPY BIRTHDAY BILLIE!!!</h1>
+          <p>
+            Happy birthday brooo I love you so much, look i even made a super
+            shitty website for you wow so cool. Gonna be honest i have literallly
+            no idea how to change the font of this text man theres like 3
+            different files all just for this site and frankly this is my first
+            time making a website. its like 10 times more confusing than remaking
+            the brittish voting system somehow. Also the click me pls button does nothing but if i remove it everything breaks.
+            it is currently 20:12 ive spent like an hour trying to figure out why and still have no clue. Sorry.
+          </p>
+          <button class="hero_btn">Click me pls!!!!</button>
+        </div>
+        <div class="hero_image">
+          <img id="hero-img" src="/images/cuter.png" alt="image of billie i think" />
+        </div>
+      </div>
+    </section>
+
+    <!-- love dovey paragpraph section -->
+    <section class="text_section" id="paragpraph">
+      <div class="text_container">
+        <h2>I LOVE YOU SO MUCH MANNNN</h2>
+        <p>
+             God youre 17 now man that makes me less of a nonce wow how cool. Happy birthday bro I hope you have a good day man im 
+        pretty sure you said before that your shein (temu) haul was kinda like your birthday present and this shitty ass thing
+        I made defintiely doesnt count as a present but hey i still got you something frfr....my eternal love. Wow how corny so cool.
+        Anyways yeh i really do love every single bit of you bro im like head over heels for you man. Fr though your face is so pretty
+        I legit like get a little stun locked when I see you at that bus stop cause holy shit I like realise all over again just how 
+        pretty you are. Also obviously I think youre like mega sexy I mean cmon man you give me fucking nosebleeds because of how 
+        'exited' you make me feel bro like thats ltierally a meme i didnt even know that shit was actually was possible its insane man 
+        you do crazy to things to me. Btw i apologise about always rage baiting i really do love hearing you talk man you always have 
+        somethig interesting to say and are always just fun in general to talk to im just a moron (will try to stop ragebaiting i promise).
+        But yeh really man i just love you so so so much Billie i hope you have a great bday and even though im a lazy broke ass bum and couldnt 
+        really get you anything i hope this kinda does a little something at least to tide you over until i can do something actually nice for you.
+        </p>
+      </div>
+    </section>
+
+    <section class="video_section" id="video">
+      <div class="video_title">
+        <h3>Super Cool Video:</h3>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DWcttAcS93o?si=aYmD5-uueuYWPG06" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <div class="footer_text">
+        <p>
+          Just a warning the video is super quite you might wanna turn it up.Anyways yeh thats kinda it man I really really do love you bro. The video
+          is a joke i promise bro. Have a super good birthday man I love you so muchhhhh!!!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Mobile nav script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menu = document.querySelector('.navbar_menu');
+      const toggleButton = document.querySelector('.navbar_toggle');
+      const menuLinks = document.querySelectorAll('.navbar_menu .navbar_links');
+
+      // toggle menu
+      toggleButton.addEventListener('click', () => {
+        menu.classList.toggle('active');
+      });
+
+      // close menu when clicking a link
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.remove('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
